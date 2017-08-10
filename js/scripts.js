@@ -2,6 +2,12 @@
 $(document).ready(function() {
 
   $("form#questions").submit(function(event) {
+
+    $(".betty").hide();
+    $(".trump").hide();
+    $(".kesha").hide();
+
+
     event.preventDefault();
     var total1 = parseInt($("input:radio[name=question1]:checked").val());
     var total2 = parseInt($("input:radio[name=question2]:checked").val());
@@ -14,11 +20,11 @@ $(document).ready(function() {
     var finaltotal = total1+total2;
 
     if (finaltotal >= 5) {
-      $('.kesha').show();
+      $('.kesha').toggle();
     } else if (finaltotal >=3 && finaltotal <5) {
-      $('.betty').show();
+      $('.betty').toggle();
     } else if (finaltotal ===2){
-      $('.trump').show();
+      $('.trump').toggle();
     }
 
 
