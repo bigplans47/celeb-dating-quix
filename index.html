@@ -3,12 +3,16 @@
   <head>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="ja/jquery-3.2.1.js">
+    <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
     <title>Celebrity Dating Quiz!</title>
   </head>
   <body>
+
     <div class="container">
+    <form class="forminfo" id="questions">
+
+
       <div class="question">
           <div class="radio">
             <h3 class="titlequestion">What would you choose for a first date?</h3>
@@ -17,11 +21,14 @@
           <div class="radio">
             <label><input type="radio" name="question1" value="1">Going out for a movie</label>
           </div>
-          <div class="radio disabled">
-            <label><input type="radio" name="question1" value="2">Saving the whales</label>
+          <div class="radio">
+            <label><input type="radio" name="question1" value="2" checked>Saving the whales</label>
           </div>
+          <button class:="btn-success" name="test" type="submit">Match Me!</button>
       </div>
-      <div class="question">
+      </form>
+      <div class="questionform" id="output"></div>
+      <!-- <div class="question">
           <div class="radio">
             <h3 class="titlequestion">What do you like to do for fun?</h3>
             <label><input type="radio" name="question2" value="0">Wearing expenseive clothing and laughing at the homeless</label>
@@ -29,10 +36,10 @@
           <div class="radio">
             <label><input type="radio" name="question2" value="1">Going for a walk</label>
           </div>
-          <div class="radio disabled">
+          <div class="radio">
             <label><input type="radio" name="question2" value="2">Piloting a McDonnell Douglas F-15 Eagle</label>
           </div>
-      </div>
+      </div> -->
 
 
 
@@ -51,15 +58,7 @@
 
 
 
-
-
-
-
-
-
-
-
-    </div>
+</div>
 
   </body>
 </html>
